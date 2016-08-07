@@ -1,0 +1,7 @@
+<h1>Samuel S. Sampson's Super URL Shortener:</h1>
+
+<%= form_for @link, url: '/' do |link| %>
+    <%= link.label :url, "Stick you're url right here to shortify =>" %>
+    <%= link.text_field :url %>
+    <br><%= link.submit %>
+<% end %>

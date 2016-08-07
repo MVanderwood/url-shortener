@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'main#home'
+  root 'links#new'
+  post '/' => 'links#create'
 
   resources :users, only: [:new, :create]
   resources :sessions, only: [:new, :create, :destroy]
